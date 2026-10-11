@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arvind Coaching Center</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f4f5ff;
+  color:#222;
+}
+header{
+  background:linear-gradient(135deg,#352080,#1769d2);
+  color:white;
+  padding:26px 16px;
+  text-align:center;
+}
+header h1{margin:0 0 10px;font-size:27px}
+header p{margin:5px}
+nav{
+  background:#fff;
+  padding:13px 5px;
+  text-align:center;
+  position:sticky;
+  top:0;
+  box-shadow:0 2px 8px #ddd;
+}
+nav a{
+  color:#302080;
+  text-decoration:none;
+  font-weight:bold;
+  margin:0 7px;
+  font-size:14px;
+}
+.hero{
+  margin:18px;
+  padding:25px 17px;
+  border-radius:18px;
+  background:linear-gradient(135deg,#e4e0ff,#d9efff);
+  text-align:center;
+}
+.hero h2{color:#352080}
+.btn{
+  display:inline-block;
+  background:#4526a8;
+  color:white;
+  padding:12px 18px;
+  border-radius:9px;
+  text-decoration:none;
+  margin:6px;
+  border:0;
+  cursor:pointer;
+}
+section{padding:18px}
+.title{text-align:center;color:#352080}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(145px,1fr));
+  gap:13px;
+}
+.card{
+  background:white;
+  padding:18px 12px;
+  border-radius:14px;
+  text-align:center;
+  box-shadow:0 3px 12px #ddd;
+}
+.card h3{color:#38228a}
+.card a{color:#1769d2}
+.video{
+  width:100%;
+  aspect-ratio:16/9;
+  border:0;
+  border-radius:12px;
+  background:#ddd;
+}
+.note{
+  background:#fff;
+  padding:16px;
+  border-radius:12px;
+  line-height:1.8;
+}
+footer{
+  background:#21164d;
+  color:white;
+  text-align:center;
+  padding:22px 10px;
+  margin-top:20px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🎓 Arvind Coaching Center</h1>
+  <p>सीखें • आगे बढ़ें • सफल बनें</p>
+  <p>मालिक: अरविंद पाल</p>
+  <p>ऑपरेटर: मनीष पाल</p>
+  <p>ककरहा, त्योंथर, जिला रीवा, मध्य प्रदेश</p>
+</header>
+
+<nav>
+  <a href="#home">होम</a>
+  <a href="#courses">कोर्स</a>
+  <a href="#video">वीडियो</a>
+  <a href="#live">लाइव क्लास</a>
+</nav>
+
+<div class="hero" id="home">
+  <h2>आपकी ऑनलाइन पढ़ाई अब घर बैठे!</h2>
+  <p>वीडियो क्लास, प्रतियोगी परीक्षा की तैयारी और कंप्यूटर शिक्षा।</p>
+  <a class="btn" href="#courses">कोर्स देखें</a>
+  <a class="btn" href="#live">लाइव क्लास</a>
+</div>
+
+<section id="courses">
+  <h2 class="title">📚 हमारे कोर्स</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>📖 कक्षा 1–10</h3>
+      <p>स्कूल विषयों की पढ़ाई</p>
+      <p>जल्द उपलब्ध</p>
+    </div>
+    <div class="card">
+      <h3>🎯 प्रतियोगी परीक्षा</h3>
+      <p>MP पुलिस, SSC और अन्य परीक्षाएँ</p>
+      <p>जल्द उपलब्ध</p>
+    </div>
+    <div class="card">
+      <h3>💻 कंप्यूटर कोर्स</h3>
+      <p>कंप्यूटर बेसिक और MS Excel</p>
+      <p>जल्द उपलब्ध</p>
+    </div>
+    <div class="card">
+      <h3>🎥 वीडियो कोर्स</h3>
+      <p>रिकॉर्डेड वीडियो से पढ़ाई</p>
+      <a href="#video">वीडियो सेक्शन देखें</a>
+    </div>
+  </div>
+</section>
+
+<section id="video">
+  <h2 class="title">🎥 वीडियो से पढ़ाई</h2>
+  <div class="note">
+    <p>यहाँ YouTube के पढ़ाई वाले वीडियो जोड़े जा सकते हैं।</p>
+    <p>वीडियो जोड़ने के लिए उसका सही YouTube Embed लिंक कोड में डालना होगा।</p>
+    <iframe class="video"
+      src="https://www.youtube-nocookie.com/embed/VIDEO_ID"
+      title="पढ़ाई का वीडियो"
+      allowfullscreen>
+    </iframe>
+    <p><small>यह नमूना है। VIDEO_ID की जगह असली वीडियो ID डालने पर वीडियो चलेगा।</small></p>
+  </div>
+</section>
+
+<section id="live">
+  <h2 class="title">🔴 लाइव ऑनलाइन क्लास</h2>
+  <div class="note">
+    <p>लाइव क्लास Google Meet से आयोजित की जाएगी।</p>
+    <p>क्लास का लिंक विद्यार्थी को शिक्षक द्वारा दिया जाएगा।</p>
+    <p>अभी लाइव क्लास का लिंक उपलब्ध नहीं है।</p>
+  </div>
+</section>
+
+<section>
+  <h2 class="title">ℹ️ हमारे बारे में</h2>
+  <div class="note">
+    <p><b>मालिक:</b> अरविंद पाल</p>
+    <p><b>ऑपरेटर:</b> मनीष पाल</p>
+    <p><b>स्थान:</b> ककरहा, त्योंथर, रीवा, मध्य प्रदेश</p>
+    <p>हमारा उद्देश्य विद्यार्थियों को ऑनलाइन शिक्षा उपलब्ध कराने के लिए एक सरल प्लेटफॉर्म बनाना है।</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Arvind Coaching Center</p>
+  <p>सभी अधिकार सुरक्षित।</p>
+</footer>
+
+</body>
+  </html>
