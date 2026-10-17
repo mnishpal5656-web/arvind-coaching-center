@@ -3,182 +3,841 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arvind Coaching Center</title>
+
+<title>Arvind Coaching Center | Online Classes</title>
+
+<meta name="description"
+content="Arvind Coaching Center Kakaraha, Teonthar, Rewa. Online classes, video lectures, courses and student login.">
+
 <style>
-*{box-sizing:border-box}
-body{
-  margin:0;
-  font-family:Arial,sans-serif;
-  background:#f4f5ff;
-  color:#222;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-header{
-  background:linear-gradient(135deg,#352080,#1769d2);
-  color:white;
-  padding:26px 16px;
-  text-align:center;
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #172033;
 }
-header h1{margin:0 0 10px;font-size:27px}
-header p{margin:5px}
-nav{
-  background:#fff;
-  padding:13px 5px;
-  text-align:center;
-  position:sticky;
-  top:0;
-  box-shadow:0 2px 8px #ddd;
+
+header {
+  background: linear-gradient(120deg, #102c70, #1769d2);
+  color: white;
+  padding: 22px 15px;
+  text-align: center;
 }
-nav a{
-  color:#302080;
-  text-decoration:none;
-  font-weight:bold;
-  margin:0 7px;
-  font-size:14px;
+
+header h1 {
+  font-size: 27px;
+  margin-bottom: 9px;
 }
-.hero{
-  margin:18px;
-  padding:25px 17px;
-  border-radius:18px;
-  background:linear-gradient(135deg,#e4e0ff,#d9efff);
-  text-align:center;
+
+header p {
+  font-size: 14px;
+  margin: 5px;
 }
-.hero h2{color:#352080}
-.btn{
-  display:inline-block;
-  background:#4526a8;
-  color:white;
-  padding:12px 18px;
-  border-radius:9px;
-  text-decoration:none;
-  margin:6px;
-  border:0;
-  cursor:pointer;
+
+nav {
+  background: #09245b;
+  padding: 12px 5px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
-section{padding:18px}
-.title{text-align:center;color:#352080}
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(145px,1fr));
-  gap:13px;
+
+nav a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 7px 9px;
+  font-size: 13px;
 }
-.card{
-  background:white;
-  padding:18px 12px;
-  border-radius:14px;
-  text-align:center;
-  box-shadow:0 3px 12px #ddd;
+
+.hero {
+  background: linear-gradient(135deg, #e0edff, #ffffff);
+  padding: 35px 18px;
+  text-align: center;
 }
-.card h3{color:#38228a}
-.card a{color:#1769d2}
-.video{
-  width:100%;
-  aspect-ratio:16/9;
-  border:0;
-  border-radius:12px;
-  background:#ddd;
+
+.hero h2 {
+  font-size: 26px;
+  color: #123b85;
+  margin-bottom: 12px;
 }
-.note{
-  background:#fff;
-  padding:16px;
-  border-radius:12px;
-  line-height:1.8;
+
+.hero p {
+  line-height: 1.7;
+  margin-bottom: 18px;
 }
-footer{
-  background:#21164d;
-  color:white;
-  text-align:center;
-  padding:22px 10px;
-  margin-top:20px;
+
+button, .btn {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 17px;
+  cursor: pointer;
+  font-size: 15px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.primary {
+  background: #155bd5;
+  color: white;
+}
+
+.secondary {
+  background: #0b8150;
+  color: white;
+}
+
+.danger {
+  background: #c62828;
+  color: white;
+}
+
+.container {
+  max-width: 1050px;
+  padding: 20px 14px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin: 20px 0;
+  color: #123b85;
+  font-size: 25px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  gap: 14px;
+}
+
+.box {
+  background: white;
+  border-radius: 13px;
+  padding: 19px 12px;
+  box-shadow: 0 3px 12px #00000012;
+  text-align: center;
+}
+
+.box .icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.box h3 {
+  font-size: 17px;
+  margin-bottom: 9px;
+}
+
+.box p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #566176;
+  margin-bottom: 12px;
+}
+
+.box button {
+  font-size: 13px;
+  padding: 10px 12px;
+  width: 100%;
+}
+
+.blue { border-top: 4px solid #1976d2; }
+.green { border-top: 4px solid #159957; }
+.orange { border-top: 4px solid #ef8b20; }
+.purple { border-top: 4px solid #8255d5; }
+
+.panel {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  margin: 20px auto;
+  max-width: 560px;
+  box-shadow: 0 4px 16px #00000012;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.panel button {
+  width: 100%;
+  margin-top: 7px;
+}
+
+.message {
+  margin-top: 12px;
+  padding: 12px;
+  background: #eef4ff;
+  border-radius: 8px;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.course {
+  text-align: left;
+}
+
+.course .price {
+  color: #087443;
+  font-size: 19px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+#videoFrame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 10px;
+  margin-top: 12px;
+  background: #111;
+}
+
+footer {
+  background: #09245b;
+  color: white;
+  padding: 25px 15px;
+  text-align: center;
+  line-height: 1.9;
+  margin-top: 25px;
+}
+
+footer a {
+  color: #ffe082;
+}
+
+.small {
+  font-size: 12px;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+@media (max-width: 400px) {
+  header h1 { font-size: 23px; }
+  .hero h2 { font-size: 22px; }
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 </style>
 </head>
+
 <body>
 
 <header>
   <h1>🎓 Arvind Coaching Center</h1>
-  <p>सीखें • आगे बढ़ें • सफल बनें</p>
-  <p>मालिक: अरविंद पाल</p>
-  <p>ऑपरेटर: मनीष पाल</p>
-  <p>ककरहा, त्योंथर, जिला रीवा, मध्य प्रदेश</p>
+  <p>ककरहा, त्योंथर, रीवा, मध्य प्रदेश</p>
+  <p>मालिक: अरविंद पाल | पार्टनर: मनीष पाल</p>
+  <p>📚 पढ़ाई आपके मोबाइल पर</p>
 </header>
 
 <nav>
   <a href="#home">होम</a>
   <a href="#courses">कोर्स</a>
-  <a href="#video">वीडियो</a>
-  <a href="#live">लाइव क्लास</a>
+  <a href="#videos">वीडियो क्लास</a>
+  <a href="#tests">ऑनलाइन टेस्ट</a>
+  <a href="#account">लॉगिन</a>
 </nav>
 
-<div class="hero" id="home">
-  <h2>आपकी ऑनलाइन पढ़ाई अब घर बैठे!</h2>
-  <p>वीडियो क्लास, प्रतियोगी परीक्षा की तैयारी और कंप्यूटर शिक्षा।</p>
-  <a class="btn" href="#courses">कोर्स देखें</a>
-  <a class="btn" href="#live">लाइव क्लास</a>
-</div>
+<section class="hero" id="home">
+  <h2>आपकी सफलता, हमारा लक्ष्य!</h2>
+  <p>
+    ऑनलाइन वीडियो क्लास, विषयवार पढ़ाई और परीक्षा की तैयारी।
+    अपने मोबाइल से पढ़ाई शुरू करें।
+  </p>
+  <button class="primary"
+    onclick="document.getElementById('account').scrollIntoView()">
+    विद्यार्थी रजिस्ट्रेशन / लॉगिन
+  </button>
+</section>
 
-<section id="courses">
-  <h2 class="title">📚 हमारे कोर्स</h2>
+<main class="container">
+
+  <h2 class="section-title">हमारी सुविधाएँ</h2>
+
   <div class="grid">
-    <div class="card">
-      <h3>📖 कक्षा 1–10</h3>
-      <p>स्कूल विषयों की पढ़ाई</p>
-      <p>जल्द उपलब्ध</p>
-    </div>
-    <div class="card">
-      <h3>🎯 प्रतियोगी परीक्षा</h3>
-      <p>MP पुलिस, SSC और अन्य परीक्षाएँ</p>
-      <p>जल्द उपलब्ध</p>
-    </div>
-    <div class="card">
-      <h3>💻 कंप्यूटर कोर्स</h3>
-      <p>कंप्यूटर बेसिक और MS Excel</p>
-      <p>जल्द उपलब्ध</p>
-    </div>
-    <div class="card">
-      <h3>🎥 वीडियो कोर्स</h3>
-      <p>रिकॉर्डेड वीडियो से पढ़ाई</p>
-      <a href="#video">वीडियो सेक्शन देखें</a>
-    </div>
-  </div>
-</section>
 
-<section id="video">
-  <h2 class="title">🎥 वीडियो से पढ़ाई</h2>
-  <div class="note">
-    <p>यहाँ YouTube के पढ़ाई वाले वीडियो जोड़े जा सकते हैं।</p>
-    <p>वीडियो जोड़ने के लिए उसका सही YouTube Embed लिंक कोड में डालना होगा।</p>
-    <iframe class="video"
-      src="https://www.youtube-nocookie.com/embed/VIDEO_ID"
-      title="पढ़ाई का वीडियो"
-      allowfullscreen>
-    </iframe>
-    <p><small>यह नमूना है। VIDEO_ID की जगह असली वीडियो ID डालने पर वीडियो चलेगा।</small></p>
-  </div>
-</section>
+    <div class="box blue">
+      <div class="icon">🎥</div>
+      <h3>वीडियो क्लास</h3>
+      <p>वीडियो के माध्यम से पढ़ाई करें।</p>
+      <button class="primary"
+        onclick="goTo('videos')">वीडियो देखें</button>
+    </div>
 
-<section id="live">
-  <h2 class="title">🔴 लाइव ऑनलाइन क्लास</h2>
-  <div class="note">
-    <p>लाइव क्लास Google Meet से आयोजित की जाएगी।</p>
-    <p>क्लास का लिंक विद्यार्थी को शिक्षक द्वारा दिया जाएगा।</p>
-    <p>अभी लाइव क्लास का लिंक उपलब्ध नहीं है।</p>
-  </div>
-</section>
+    <div class="box green">
+      <div class="icon">📚</div>
+      <h3>ऑनलाइन कोर्स</h3>
+      <p>अपने विषय का कोर्स चुनें।</p>
+      <button class="secondary"
+        onclick="goTo('courses')">कोर्स देखें</button>
+    </div>
 
-<section>
-  <h2 class="title">ℹ️ हमारे बारे में</h2>
-  <div class="note">
-    <p><b>मालिक:</b> अरविंद पाल</p>
-    <p><b>ऑपरेटर:</b> मनीष पाल</p>
-    <p><b>स्थान:</b> ककरहा, त्योंथर, रीवा, मध्य प्रदेश</p>
-    <p>हमारा उद्देश्य विद्यार्थियों को ऑनलाइन शिक्षा उपलब्ध कराने के लिए एक सरल प्लेटफॉर्म बनाना है।</p>
+    <div class="box orange">
+      <div class="icon">📝</div>
+      <h3>ऑनलाइन टेस्ट</h3>
+      <p>अपनी तैयारी जाँचें।</p>
+      <button class="primary"
+        onclick="goTo('tests')">टेस्ट खोलें</button>
+    </div>
+
+    <div class="box purple">
+      <div class="icon">👨‍🎓</div>
+      <h3>विद्यार्थी अकाउंट</h3>
+      <p>अपना अकाउंट बनाएँ और लॉगिन करें।</p>
+      <button class="primary"
+        onclick="goTo('account')">अकाउंट खोलें</button>
+    </div>
+
   </div>
-</section>
+
+  <section id="courses">
+    <h2 class="section-title">हमारे कोर्स</h2>
+
+    <div class="grid">
+
+      <div class="box course blue">
+        <div class="icon">💻</div>
+        <h3>कंप्यूटर बेसिक</h3>
+        <p>कंप्यूटर, कीबोर्ड, इंटरनेट और डिजिटल जानकारी।</p>
+        <div class="price">फीस: घोषित की जाएगी</div>
+        <button class="primary"
+          onclick="enroll('कंप्यूटर बेसिक')">
+          कोर्स में रुचि दर्ज करें
+        </button>
+      </div>
+
+      <div class="box course green">
+        <div class="icon">📖</div>
+        <h3>सामान्य ज्ञान</h3>
+        <p>प्रतियोगी परीक्षाओं के लिए सामान्य ज्ञान।</p>
+        <div class="price">फीस: घोषित की जाएगी</div>
+        <button class="primary"
+          onclick="enroll('सामान्य ज्ञान')">
+          कोर्स में रुचि दर्ज करें
+        </button>
+      </div>
+
+      <div class="box course orange">
+        <div class="icon">➗</div>
+        <h3>गणित</h3>
+        <p>गणित के सवालों का अभ्यास और तैयारी।</p>
+        <div class="price">फीस: घोषित की जाएगी</div>
+        <button class="primary"
+          onclick="enroll('गणित')">
+          कोर्स में रुचि दर्ज करें
+        </button>
+      </div>
+
+      <div class="box course purple">
+        <div class="icon">📰</div>
+        <h3>हिंदी</h3>
+        <p>हिंदी व्याकरण और परीक्षा की तैयारी।</p>
+        <div class="price">फीस: घोषित की जाएगी</div>
+        <button class="primary"
+          onclick="enroll('हिंदी')">
+          कोर्स में रुचि दर्ज करें
+        </button>
+      </div>
+
+    </div>
+
+    <p class="small" style="margin-top:12px">
+      नोट: फीस और कोर्स की उपलब्धता संचालक द्वारा तय की जाएगी।
+      अभी यह पेज भुगतान पूरा करने या पेड वीडियो की सुरक्षा नहीं करता।
+    </p>
+  </section>
+
+  <section id="videos">
+    <h2 class="section-title">वीडियो क्लास</h2>
+
+    <div class="panel">
+      <label for="videoSelect">वीडियो चुनें</label>
+
+      <select id="videoSelect" onchange="showVideo()">
+        <option value="">वीडियो चुनें</option>
+        <option value="computer">कंप्यूटर बेसिक</option>
+        <option value="gk">सामान्य ज्ञान</option>
+        <option value="math">गणित</option>
+      </select>
+
+      <div id="videoInfo" class="message">
+        अभी वीडियो लिंक जोड़े जाने बाकी हैं।
+      </div>
+
+      <div id="videoArea" class="hidden">
+        <iframe id="videoFrame"
+          title="पढ़ाई का वीडियो"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+      </div>
+
+      <p class="small" style="margin-top:12px">
+        वीडियो संचालक द्वारा जोड़ने के बाद यहाँ दिखाई देंगे।
+      </p>
+    </div>
+  </section>
+
+  <section id="tests">
+    <h2 class="section-title">ऑनलाइन टेस्ट</h2>
+
+    <div class="panel">
+      <h3>कंप्यूटर बेसिक टेस्ट</h3>
+      <p style="margin:12px 0">
+        यह शुरुआती डेमो टेस्ट है। अपना उत्तर चुनें।
+      </p>
+
+      <form id="quizForm">
+        <p><b>1. कंप्यूटर का दिमाग किसे कहा जाता है?</b></p>
+
+        <label>
+          <input type="radio" name="q1" value="a"
+            style="width:auto"> मॉनिटर
+        </label><br>
+
+        <label>
+          <input type="radio" name="q1" value="b"
+            style="width:auto"> CPU
+        </label><br>
+
+        <label>
+          <input type="radio" name="q1" value="c"
+            style="width:auto"> माउस
+        </label><br><br>
+
+        <p><b>2. कॉपी करने की शॉर्टकट कुंजी कौन-सी है?</b></p>
+
+        <label>
+          <input type="radio" name="q2" value="a"
+            style="width:auto"> Ctrl + C
+        </label><br>
+
+        <label>
+          <input type="radio" name="q2" value="b"
+            style="width:auto"> Ctrl + V
+        </label><br>
+
+        <label>
+          <input type="radio" name="q2" value="c"
+            style="width:auto"> Ctrl + X
+        </label><br>
+
+        <button class="secondary" type="submit">
+          रिजल्ट देखें
+        </button>
+      </form>
+
+      <div id="quizResult" class="message hidden"></div>
+
+      <p class="small" style="margin-top:10px">
+        यह केवल डेमो टेस्ट है। इसका रिजल्ट अभी सर्वर पर सेव नहीं होता।
+      </p>
+    </div>
+  </section>
+
+  <section id="account">
+    <h2 class="section-title">विद्यार्थी अकाउंट</h2>
+
+    <div class="panel">
+
+      <div id="authForms">
+
+        <h3>नया अकाउंट बनाएँ</h3>
+
+        <form id="registerForm">
+          <label for="regName">विद्यार्थी का नाम</label>
+          <input id="regName" type="text"
+            placeholder="अपना पूरा नाम लिखें"
+            maxlength="80" required>
+
+          <label for="regEmail">ईमेल</label>
+          <input id="regEmail" type="email"
+            placeholder="अपना ईमेल लिखें" required>
+
+          <label for="regPassword">पासवर्ड</label>
+          <input id="regPassword" type="password"
+            placeholder="कम से कम 8 अक्षर"
+            minlength="8" required>
+
+          <button class="primary" type="submit">
+            रजिस्ट्रेशन करें
+          </button>
+        </form>
+
+        <hr style="margin:22px 0">
+
+        <h3>पहले से अकाउंट है? लॉगिन करें</h3>
+
+        <form id="loginForm">
+          <label for="loginEmail">ईमेल</label>
+          <input id="loginEmail" type="email"
+            placeholder="अपना ईमेल लिखें" required>
+
+          <label for="loginPassword">पासवर्ड</label>
+          <input id="loginPassword" type="password"
+            placeholder="अपना पासवर्ड लिखें" required>
+
+          <button class="secondary" type="submit">
+            लॉगिन करें
+          </button>
+        </form>
+
+        <button class="primary" type="button"
+          onclick="resetPassword()">
+          पासवर्ड भूल गए?
+        </button>
+
+      </div>
+
+      <div id="studentDashboard" class="hidden">
+        <h3>🎉 विद्यार्थी डैशबोर्ड</h3>
+
+        <div id="studentInfo" class="message"></div>
+
+        <p style="margin:15px 0">
+          अब आप अपने अकाउंट से लॉगिन हैं।
+        </p>
+
+        <button class="primary" onclick="goTo('courses')">
+          कोर्स देखें
+        </button>
+
+        <button class="secondary" onclick="goTo('videos')">
+          वीडियो क्लास देखें
+        </button>
+
+        <button class="danger" onclick="logout()">
+          लॉगआउट
+        </button>
+      </div>
+
+      <div id="authMessage" class="message hidden"
+        role="status" aria-live="polite"></div>
+
+      <p class="small" style="margin-top:15px">
+        अकाउंट बनाने के लिए वैध ईमेल और पासवर्ड आवश्यक है।
+        अपना पासवर्ड किसी के साथ साझा न करें।
+      </p>
+
+    </div>
+  </section>
+
+</main>
 
 <footer>
+  <h3>Arvind Coaching Center</h3>
+  <p>मालिक: अरविंद पाल</p>
+  <p>पार्टनर: मनीष पाल</p>
+  <p>ककरहा, त्योंथर, रीवा, मध्य प्रदेश</p>
   <p>© 2026 Arvind Coaching Center</p>
-  <p>सभी अधिकार सुरक्षित।</p>
 </footer>
+
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+
+<script>
+/*
+  जरूरी:
+  नीचे Firebase Console से अपना असली firebaseConfig भरें।
+  Firebase Console > Project Settings > Your apps > Config
+*/
+
+const firebaseConfig = {
+  apiKey: "YAHAN_APNI_API_KEY_DALEIN",
+  authDomain: "arvind-coaching-center-60564.firebaseapp.com",
+  projectId: "arvind-coaching-center-60564",
+  storageBucket: "arvind-coaching-center-60564.firebasestorage.app",
+  messagingSenderId: "66792881947",
+  appId: "YAHAN_APNI_APP_ID_DALEIN"
+};
+
+let auth = null;
+let firebaseReady = false;
+
+const authMessage = document.getElementById("authMessage");
+
+function showMessage(message, isError = false) {
+  authMessage.textContent = message;
+  authMessage.style.background = isError ? "#ffebee" : "#e8f5e9";
+  authMessage.style.color = isError ? "#b71c1c" : "#1b5e20";
+  authMessage.classList.remove("hidden");
+}
+
+function goTo(id) {
+  document.getElementById(id).scrollIntoView({
+    behavior: "smooth"
+  });
+}
+
+function enroll(courseName) {
+  if (!auth || !auth.currentUser) {
+    showMessage(
+      "कोर्स में रुचि दर्ज करने के लिए पहले विद्यार्थी लॉगिन करें।",
+      true
+    );
+    goTo("account");
+    return;
+  }
+
+  showMessage(
+    "आपने " + courseName +
+    " कोर्स में रुचि दिखाई है। कोर्स में प्रवेश और फीस की पुष्टि संचालक करेगा।"
+  );
+}
+
+function friendlyError(error) {
+  const code = error && error.code ? error.code : "";
+
+  const messages = {
+    "auth/email-already-in-use": "इस ईमेल से पहले ही अकाउंट बना हुआ है। लॉगिन करें।",
+    "auth/invalid-email": "ईमेल का पता सही लिखें।",
+    "auth/weak-password": "मजबूत पासवर्ड रखें।",
+    "auth/invalid-credential": "ईमेल या पासवर्ड सही नहीं है।",
+    "auth/user-not-found": "इस ईमेल से अकाउंट नहीं मिला।",
+    "auth/wrong-password": "पासवर्ड गलत है।",
+    "auth/too-many-requests": "कई प्रयास हुए हैं। कुछ समय बाद फिर कोशिश करें।",
+    "auth/network-request-failed": "इंटरनेट कनेक्शन जाँचें।",
+    "auth/operation-not-allowed": "Firebase में Email/Password लॉगिन चालू करें।"
+  };
+
+  return messages[code] || (
+    "कार्य पूरा नहीं हुआ। त्रुटि कोड: " + (code || "unknown")
+  );
+}
+
+function setLoggedIn(user) {
+  document.getElementById("authForms").classList.add("hidden");
+  document.getElementById("studentDashboard").classList.remove("hidden");
+
+  document.getElementById("studentInfo").textContent =
+    "लॉगिन ईमेल: " + user.email +
+    " | User ID: " + user.uid;
+
+  showMessage("आप सफलतापूर्वक लॉगिन हैं।");
+}
+
+function setLoggedOut() {
+  document.getElementById("authForms").classList.remove("hidden");
+  document.getElementById("studentDashboard").classList.add("hidden");
+}
+
+document.getElementById("registerForm").addEventListener(
+  "submit",
+  async function(event) {
+    event.preventDefault();
+
+    if (!firebaseReady) {
+      showMessage(
+        "Firebase कॉन्फ़िगरेशन अभी पूरा नहीं है।",
+        true
+      );
+      return;
+    }
+
+    const name = document.getElementById("regName").value.trim();
+    const email = document.getElementById("regEmail").value.trim();
+    const password = document.getElementById("regPassword").value;
+
+    if (name.length < 2) {
+      showMessage("कृपया अपना सही नाम लिखें।", true);
+      return;
+    }
+
+    try {
+      const result = await auth.createUserWithEmailAndPassword(
+        email,
+        password
+      );
+
+      await result.user.updateProfile({
+        displayName: name
+      });
+
+      setLoggedIn(result.user);
+
+      showMessage(
+        "अकाउंट बन गया है। अपने ईमेल की पुष्टि करें यदि Firebase इसकी माँग करे।"
+      );
+
+      document.getElementById("registerForm").reset();
+
+    } catch (error) {
+      showMessage(friendlyError(error), true);
+    }
+  }
+);
+
+document.getElementById("loginForm").addEventListener(
+  "submit",
+  async function(event) {
+    event.preventDefault();
+
+    if (!firebaseReady) {
+      showMessage(
+        "Firebase कॉन्फ़िगरेशन अभी पूरा नहीं है।",
+        true
+      );
+      return;
+    }
+
+    const email = document.getElementById("loginEmail").value.trim();
+    const password = document.getElementById("loginPassword").value;
+
+    try {
+      await auth.signInWithEmailAndPassword(email, password);
+
+      document.getElementById("loginForm").reset();
+
+    } catch (error) {
+      showMessage(friendlyError(error), true);
+    }
+  }
+);
+
+async function logout() {
+  if (!auth) return;
+
+  try {
+    await auth.signOut();
+    showMessage("आप लॉगआउट हो गए हैं।");
+  } catch (error) {
+    showMessage(friendlyError(error), true);
+  }
+}
+
+async function resetPassword() {
+  if (!firebaseReady) {
+    showMessage("पहले Firebase कॉन्फ़िगरेशन पूरा करें।", true);
+    return;
+  }
+
+  const email = document.getElementById("loginEmail").value.trim();
+
+  if (!email) {
+    showMessage(
+      "पहले लॉगिन वाले बॉक्स में अपना ईमेल लिखें।",
+      true
+    );
+    return;
+  }
+
+  try {
+    await auth.sendPasswordResetEmail(email);
+    showMessage("यदि इस ईमेल पर अकाउंट है, तो पासवर्ड रीसेट का ईमेल भेज दिया गया है।");
+  } catch (error) {
+    showMessage(friendlyError(error), true);
+  }
+}
+
+function showVideo() {
+  const selected = document.getElementById("videoSelect").value;
+  const frame = document.getElementById("videoFrame");
+  const area = document.getElementById("videoArea");
+  const info = document.getElementById("videoInfo");
+
+  /*
+    संचालक यहाँ अपने प्रकाशित YouTube वीडियो के embed लिंक जोड़े।
+    उदाहरण: https://www.youtube.com/embed/VIDEO_ID
+  */
+  const videoLinks = {
+    computer: "",
+    gk: "",
+    math: ""
+  };
+
+  const names = {
+    computer: "कंप्यूटर बेसिक",
+    gk: "सामान्य ज्ञान",
+    math: "गणित"
+  };
+
+  if (!selected || !videoLinks[selected]) {
+    area.classList.add("hidden");
+    frame.src = "";
+    info.textContent = selected
+      ? names[selected] + " का वीडियो अभी जोड़ा नहीं गया है।"
+      : "अभी वीडियो लिंक जोड़े जाने बाकी हैं।";
+    return;
+  }
+
+  frame.src = videoLinks[selected];
+  area.classList.remove("hidden");
+  info.textContent = names[selected] + " की वीडियो क्लास";
+}
+
+document.getElementById("quizForm").addEventListener(
+  "submit",
+  function(event) {
+    event.preventDefault();
+
+    const data = new FormData(event.target);
+    let score = 0;
+
+    if (data.get("q1") === "b") score++;
+    if (data.get("q2") === "a") score++;
+
+    const result = document.getElementById("quizResult");
+    result.textContent =
+      "आपका स्कोर: " + score + " / 2 अंक";
+
+    result.classList.remove("hidden");
+  }
+);
+
+try {
+  const configIsComplete =
+    firebaseConfig.apiKey !== "YAHAN_APNI_API_KEY_DALEIN" &&
+    firebaseConfig.apiKey &&
+    firebaseConfig.appId !== "YAHAN_APNI_APP_ID_DALEIN" &&
+    firebaseConfig.appId;
+
+  if (configIsComplete && window.firebase) {
+    firebase.initializeApp(firebaseConfig);
+    auth = firebase.auth();
+    firebaseReady = true;
+
+    auth.onAuthStateChanged(function(user) {
+      if (user) {
+        setLoggedIn(user);
+      } else {
+        setLoggedOut();
+      }
+    });
+  } else {
+    showMessage(
+      "Firebase Console से apiKey और appId भरना बाकी है।",
+      true
+    );
+  }
+} catch (error) {
+  showMessage(
+    "Firebase शुरू नहीं हो पाया। कॉन्फ़िगरेशन जाँचें।",
+    true
+  );
+}
+</script>
 
 </body>
   </html>
